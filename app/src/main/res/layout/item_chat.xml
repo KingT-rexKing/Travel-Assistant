@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="vertical"
+    android:paddingVertical="10dp">
+
+    <RelativeLayout
+        android:id="@+id/right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp">
+
+        <TextView
+            android:id="@+id/tv_message1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_face1"
+            android:layout_toLeftOf="@+id/iv_face1"
+            android:background="@drawable/shape_806bf8_8"
+            android:gravity="center"
+            android:minHeight="50dp"
+            android:padding="10dp"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="15dp"
+            android:text="xx"
+            android:textColor="#fff" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_face1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_f7f7f7_25"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/maomao"
+            android:text="英"
+            android:textColor="#666"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:shapeAppearanceOverlay="@style/Round50" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp"
+        android:visibility="visible">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_face0"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#f7f7f7"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/go_5"
+            android:text="中"
+            android:textColor="#666"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:shapeAppearanceOverlay="@style/Round50" />
+
+        <TextView
+            android:id="@+id/tv_message0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_face0"
+            android:layout_toRightOf="@id/iv_face0"
+            android:background="@drawable/shape_f7f7f7_8"
+            android:gravity="center"
+            android:minHeight="50dp"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="15dp"
+            android:text="你好"
+            android:textColor="#666" />
+    </RelativeLayout>
+</LinearLayout>
